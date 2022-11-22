@@ -24,7 +24,7 @@ export default class Header extends Component {
                         font-family: 'Macondo', serif;
                       }
                         .header{
-                            background: linear-gradient(to top left, rgb(247, 161, 2), rgb(199, 0, 0));
+                            background: linear-gradient(to top left,  #000088, #00001e);
                             box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.377);
                             padding-bottom: 20px;
                         }
@@ -37,14 +37,18 @@ export default class Header extends Component {
                             align-items: center;
                         }
                         .menu a{
-                            color: white;
+                            color: #fefc16;
                             font-weight: bolt;
                             text-decoration: none;
                             padding: 10px 15px;
                         }
+                        .menu a:hover{
+                            color: white;
+                            
+                        }
                         .h-name{
                             letter-spacing: 5px;
-                            color: white;
+                            color: #fefc16;
                             font-size: 50px;
                             font-style: italic;
                             font-weight: bold;
@@ -63,6 +67,7 @@ export default class Header extends Component {
                             text-decoration: none;
                             color: white;
                             font-weight: 900;
+                            padding-top: 2px;
                         }
                         .wpp, .insta, .vk{
                             position: relative;
@@ -90,13 +95,13 @@ export default class Header extends Component {
                             padding-bottom: 30px;
                             padding-right: 20%;
                             padding-left: 20%;
-                            background-color: rgb(230, 230, 230);
+                            background-color: #000033;
                         }
                         .foot{
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            color: rgb(90, 90, 90);
+                            color: #fefc16;
                             font-size: 14px;
                         }
                         .soc_link{
@@ -106,20 +111,20 @@ export default class Header extends Component {
                             padding-bottom: 10px;
                         }
                         .soc_link:hover{
-                            border-bottom: 4px solid black;
+                            border-bottom: 4px solid #fefc16;
                         }
                         .li_text a{
-                            color: rgb(90, 90, 90);
+                            color: #fefc16;
                             text-decoration: none;
                             transition: 0.5s;
                             cursor:pointer;
                             padding: 5px;
                         }
                         .li_text a:hover{
-                            color: rgb(204, 48, 48);
+                            color: white;
                         }
                         .li_text p{
-                            color: rgb(90, 90, 90);
+                            color: #fe5500;
                             margin-top: 0px;
                         }
                         .fir_part{
@@ -162,8 +167,8 @@ export default class Header extends Component {
                                 <div>
                                     <Navbar.Brand href="/" >
                                         <div>
-                                            <p className='h-name'> EAZY</p>
-                                            <p className='h-name'>QUIZY</p>
+                                            <p className='h-name'>Almaty</p>
+                                            <p className='h-name'>Quests</p>
                                         </div>
                                     </Navbar.Brand>
                                 </div>
@@ -192,7 +197,7 @@ export default class Header extends Component {
                             <div className="fir_part">
                                 <div className="foot_logo"><img src={Logo} alt="" /></div>
                                 <div className="li_text">
-                                    <p>© 2022. EazyQuizy Inc.</p>
+                                    <p>© 2022. Almaty Quests.</p>
                                     <Navbar>
                                         <Nav.Link as={Link} to="/"> Main </Nav.Link>|
                                         <Nav.Link as={Link} to="/rules"> Rules </Nav.Link>|
@@ -201,9 +206,9 @@ export default class Header extends Component {
                                 </div>
                             </div>
                             <div>
-                                <a href="" className="soc_link"><img src={inst_f} alt="" /></a>
-                                <a href="" className="soc_link"><img src={vk_f} alt="" /></a>
-                                <a href="" className="soc_link"><img src={wpp_f} alt="" /></a>
+                                <a href="" className="soc_link"><img src={inst} alt="" /></a>
+                                <a href="" className="soc_link"><img src={vk} alt="" /></a>
+                                <a href="" className="soc_link"><img src={wpp} alt="" /></a>
                             </div>
                         </div>
                     </footer>
