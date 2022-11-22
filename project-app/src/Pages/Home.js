@@ -7,6 +7,7 @@ import Castle from '../images/Castle.png';
 import Cave from '../images/Cave.png';
 import Pirates from '../images/Pirates.png';
 import back from '../images/back.png'
+import sign from '../images/table.png'
 
 export default class Home extends Component {
   render() {
@@ -59,6 +60,7 @@ export default class Home extends Component {
               color: #02014e;
               text-shadow: 0px 0px 5px #000;
               margin-bottom: 50px;
+              text-decoration: underline;
             }
             .games_all{
               display: flex;
@@ -67,7 +69,6 @@ export default class Home extends Component {
               padding: 50px 0px 50px 0px;
               background-size: 100%;
               border-radius: 40px;
-              box-shadow: 0px 0px 20px #000;
             }
             .games{
               height: 300px;
@@ -90,27 +91,35 @@ export default class Home extends Component {
             .buttons{
               display: flex;
               justify-content: space-around;
-              margin-top: 20px;
-              margin-bottom: 20px;
+              margin-bottom: 50px;
               z-index: -99999999;
             }
             .log_in{
-              padding: 0 20px 0 20px;
-              border-radius: 25px;
+              padding: 15px 20px 0 20px;
               border: none;
               position: relative;
-              background: black;
-              color: white;
-              height: 8%;
+              color: black;
+              background: white;
               font-size: 15px;
               font-weight: 900;
               cursor: pointer;
-              height: 50px;
+              width: 150px;
+              height: 80px;
               transition: 0.5s;
+              background-image: url(${sign});
+              z-index: 1;
+              background-size: 100%;
+              background-repeat: no-repeat;
+            }
+            .pgame{
+              color: white;
+              text-align: center;
+              margin-top: 15px;
+              letter-spacing: 5px;
+              font-weight: bold;
             }
             .log_in:hover{
-              background: rgb(247, 161, 2);
-                color: black;
+              color: white;
             }
           `}
         </style>
@@ -128,11 +137,11 @@ export default class Home extends Component {
           <div className="future_games">
             <div className="f_games">UPCOMING EVENTS:</div>
             <div className="games_all" style={{backgroundImage: `url(${back})`}}>
-              <div className="games"><img src={Castle} className="game" /></div>
-              <div className="games"><img src={Cave} className="game" /></div>
-              <div className="games"><img src={Pirates} className="game" /></div>
+              <div className="games"><img src={Castle} className="game" /> <p className='pgame'>CASTLE</p> </div>
+              <div className="games"><img src={Cave} className="game" /> <p className='pgame'>CAVE</p></div>
+              <div className="games"><img src={Pirates} className="game" /><p className='pgame'>PIRATES</p></div>
             </div>
-            <div className='buttons'>
+            <div className='buttons' >
               <Pop_up name='Castle' />
               <Pop_up name='Cave' />
               <Pop_up name='Pirates' />

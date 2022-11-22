@@ -36,13 +36,16 @@ export default class Header extends Component {
                             align-items: center;
                         }
                         .menu a{
-                            color: #fefc16;
+                            color: white;
                             font-weight: bolt;
                             text-decoration: none;
                             padding: 10px 15px;
                         }
                         .menu a:hover{
-                            color: white;
+                            color: #fefc16;
+                        }
+                        .menu a:focus{
+                            color: #fefc16;
                         }
                         .h-name{
                             letter-spacing: 5px;
@@ -78,7 +81,7 @@ export default class Header extends Component {
                             display: flex;
                             justify-content: space-between;
                             align-items: center;
-                            color: #fefc16;
+                            color: white;
                             font-size: 14px;
                         }
                         .soc_link{
@@ -91,17 +94,17 @@ export default class Header extends Component {
                             border-bottom: 4px solid #fefc16;
                         }
                         .li_text a{
-                            color: #fefc16;
+                            color: white;
                             text-decoration: none;
                             transition: 0.5s;
                             cursor:pointer;
                             padding: 5px;
                         }
                         .li_text a:hover{
-                            color: white;
+                            color: #fefc16;
                         }
                         .li_text p{
-                            color: #fe5500;
+                            color: white;
                             margin-top: 0px;
                         }
                         .fir_part{
@@ -124,8 +127,7 @@ export default class Header extends Component {
                                 <div>
                                     <Navbar.Brand href="/" >
                                         <div>
-                                            <p className='h-name alm'>Almaty</p>
-                                            <p className='h-name'>Quests</p>
+                                            <img src={Logo}></img>
                                         </div>
                                     </Navbar.Brand>
                                 </div>
