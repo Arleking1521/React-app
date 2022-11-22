@@ -26,7 +26,6 @@ export default class Header extends Component {
                         .header{
                             background: linear-gradient(to top left,  #000088, #00001e);
                             box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.377);
-                            padding-bottom: 20px;
                         }
                         .menu{
                             font-size: 20px;
@@ -44,7 +43,6 @@ export default class Header extends Component {
                         }
                         .menu a:hover{
                             color: white;
-                            
                         }
                         .h-name{
                             letter-spacing: 5px;
@@ -55,29 +53,8 @@ export default class Header extends Component {
                             margin: 0px;
                             text-align: right;
                         }
-                        .socmed{
-                            width: 100%;
-                            position: relative;	
-                            display: flex;
-                            justify-content: space-between;
-                            align-self: center;
-                            border-bottom: 1px solid white;
-                        }
-                        .socmed a{
-                            text-decoration: none;
-                            color: white;
-                            font-weight: 900;
-                            padding-top: 2px;
-                        }
-                        .wpp, .insta, .vk{
-                            position: relative;
-                            width: 200px;
-                            display: flex;
-                            justify-content: center;
-                        }
-                        .wpp_img, .insta_img, .vk_img{
-                            position: relative;
-                            width: 15%;
+                        .alm{
+                            padding-top: 10px;
                         }
                         .main_m{
                             width:100%;
@@ -143,31 +120,11 @@ export default class Header extends Component {
                 <Router>
                     <Navbar collapseOnSelect expand="md" className='header' >
                         <Container className='top'>
-                            <div className='socmed'>
-                                <div class="wpp">
-                                    <img src={wpp} className="wpp_img" />
-                                    <a href="">
-                                        OUR WHATSAPP
-                                    </a>
-                                </div>
-                                <div class="insta">
-                                    <img src={inst} className="insta_img" />
-                                    <a href="">
-                                        OUR INSTAGRAM
-                                    </a>
-                                </div>
-                                <div class="vk">
-                                    <img src={vk} className="vk_img" />
-                                    <a href="">
-                                        OUR VK
-                                    </a>
-                                </div>
-                            </div>
                             <div className='main_m'>
                                 <div>
                                     <Navbar.Brand href="/" >
                                         <div>
-                                            <p className='h-name'>Almaty</p>
+                                            <p className='h-name alm'>Almaty</p>
                                             <p className='h-name'>Quests</p>
                                         </div>
                                     </Navbar.Brand>
