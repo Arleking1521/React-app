@@ -1,7 +1,5 @@
 import React, { useState } from 'react';
-import Button from 'react-bootstrap/Button';
-import Form from 'react-bootstrap/Form';
-import Modal from 'react-bootstrap/Modal';
+import {Button, Form, Modal} from 'react-bootstrap';
 
 function Pop_up(props) {
     const [show, setShow] = useState(false);
@@ -16,30 +14,30 @@ function Pop_up(props) {
 
             <Modal show={show} onHide={handleClose}>
                 <Modal.Header closeButton>
-                    <Modal.Title>Registration to game {props.name}</Modal.Title>
+                    <Modal.Title>Registration to {props.name} quest</Modal.Title>
                 </Modal.Header>
                 <Modal.Body>
                     <Form>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                            <Form.Label>Team Name</Form.Label>
+                            <Form.Label>Teamleader's Name</Form.Label>
                             <Form.Control
                                 type="name"
-                                placeholder="Enter your team name"
+                                placeholder="Enter your name"
                                 autoFocus
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput">
-                            <Form.Label>City</Form.Label>
+                            <Form.Label>Number of people</Form.Label>
                             <Form.Control
-                                type="city"
-                                placeholder="Enter your city"
+                                type="number"
+                                placeholder="Enter number of teammates"
                                 autoFocus
                             />
                         </Form.Group>
                         <Form.Group className="mb-3" controlId="exampleForm.ControlInput3">
                             <Form.Label>Phone number</Form.Label>
                             <Form.Control
-                                type="Number"
+                                type="number"
                                 placeholder="Enter your phone number"
                                 autoFocus
                             />
