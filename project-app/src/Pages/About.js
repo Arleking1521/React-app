@@ -83,7 +83,7 @@ export default class Contacts extends Component {
                     <div className="name_logo">
                             <h1 className="name ash">ABOUT US:</h1>
                             <div className="logo"> <img src={Logo} alt="" /> </div>
-                            <p className='logop'>There are a lot of scary quests, the choice is not easy, and therefore "Almaty Quest" offers a list of the best, in our opinion, horrors.</p>
+                            <p className='logop'>There are a lot of scary quests, the choice is not easy, and therefore "Almaty Quests" offers a list of the best, in our opinion, horrors.</p>
                             <div className="map frdivst">
                                 <a className='aframe1' href="https://yandex.kz/maps/org/1016114729/?utm_medium=mapframe&utm_source=maps">Международный университет информационных технологий</a>
                                 <a className='aframe2' href="https://yandex.kz/maps/162/almaty/category/university_college/184106140/?utm_medium=mapframe&utm_source=maps">ВУЗ в Алматы</a>
