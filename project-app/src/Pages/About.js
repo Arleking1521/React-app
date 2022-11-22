@@ -40,26 +40,31 @@ export default class Contacts extends Component {
                         margin: 20px
                     }
                     .map{
-                        box-shadow: 10px 10px 0px rgb(247, 161, 2), -10px -10px 0px rgb(199, 0, 0);
+                        box-shadow: 0px 0px 20px #000;
+                        margin-top: 70px;
+                        border-radius: 30px;
                     }
                     .name_logo{
                         display: flex;
-                        justify-content: space-around;
-                        align-content: center;
+                        justify-content: center;
+                        align-items: center;
                         margin-bottom: 50px;
                         color: var(--p);
+                        flex-direction: column;
                     }
                     .name{
-                        font-size: 100px;
+                        font-size: 80px;
                         font-weight: bold;
-                        font-style: italic;
-                        color: rgb(199, 0, 0);
-                        text-shadow: 5px 5px 0px rgb(247, 161, 2);
+                        color: #000;
+                        text-shadow: 0px 0px 8px #000;
                         text-decoration: underline;
+                        text-align: center;
                     }
                     .logo{
                         display: flex;
                         align-items: center;
+                        justify-content: center;
+                        margin: 50px 0 0 0;
                     }
                     .ash{
                         margin-top: 0px;
@@ -67,25 +72,28 @@ export default class Contacts extends Component {
                     .fs{
                         font-Size: 70px;
                     }
+                    .logop{
+                        text-align: center;
+                        font-size: 20px;
+                    }
                 }
             `}
                 </style>
                 <main>
                     <div className="name_logo">
-                        <div>
-                            <h1 className="name ash">EAZY QUIZY</h1>
+                            <h1 className="name ash">ABOUT US:</h1>
+                            <div className="logo"> <img src={Logo} alt="" /> </div>
+                            <p className='logop'>There are a lot of scary quests, the choice is not easy, and therefore "Almaty Quest" offers a list of the best, in our opinion, horrors.</p>
                             <div className="map frdivst">
                                 <a className='aframe1' href="https://yandex.kz/maps/org/1016114729/?utm_medium=mapframe&utm_source=maps">Международный университет информационных технологий</a>
                                 <a className='aframe2' href="https://yandex.kz/maps/162/almaty/category/university_college/184106140/?utm_medium=mapframe&utm_source=maps">ВУЗ в Алматы</a>
                                 <iframe src="https://yandex.kz/map-widget/v1/-/CCUZBSSMXC" width="560" height="400" frameborder="0" allowfullscreen="true" title="myFrame" className='frame'></iframe>
                             </div>
                             <p>Almaty, 34A Manas str.</p>
-                        </div>
-                        <div className="logo"> <img src={Logo} alt="" /> </div>
                     </div>
                     <h1 className="name ash fs">CONTACT US:</h1>
-                    <p>E-mail: eazyquizy@quiz.com</p>
-                    <p>Phone Number: +7 (727) 320-00-00</p>
+                    <p className='logop'>E-mail: eazyquizy@quiz.com</p>
+                    <p className='logop'>Phone Number: +7 (727) 320-00-00</p>
                 </main>
             </>
         )
