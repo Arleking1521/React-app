@@ -3,10 +3,9 @@ import { Container } from 'react-bootstrap';
 import Logo from '../images/logo.png';
 import Pop_up from '../Components/Pop_up';
 
-import HP from '../images/Harry.jpg';
-import Scrubs from '../images/scrubs.jpg';
-import Helloween from '../images/Helloween.png';
-import ff from '../images/ff.jpg';
+import Castle from '../images/Castle.png';
+import Cave from '../images/Cave.png';
+import Pirates from '../images/Pirates.png';
 import back from '../images/back.png'
 
 export default class Home extends Component {
@@ -129,16 +128,14 @@ export default class Home extends Component {
           <div className="future_games">
             <div className="f_games">UPCOMING EVENTS:</div>
             <div className="games_all" style={{backgroundImage: `url(${back})`}}>
-              <div className="games"><img src={Scrubs} className="game" /></div>
-              <div className="games"><img src={Helloween} className="game" /></div>
-              <div className="games"><img src={HP} className="game" /></div>
-              <div className="games"><img src={ff} className="game" /></div>
+              <div className="games"><img src={Castle} className="game" /></div>
+              <div className="games"><img src={Cave} className="game" /></div>
+              <div className="games"><img src={Pirates} className="game" /></div>
             </div>
             <div className='buttons'>
-              <Pop_up name='Scrubs' />
-              <Pop_up name='Helloween Quiz' />
-              <Pop_up name='Harry Potter' />
-              <Pop_up name='Fast&Furius' />
+              <Pop_up name='Castle' />
+              <Pop_up name='Cave' />
+              <Pop_up name='Pirates' />
             </div>
 
           </div>
