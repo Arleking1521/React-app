@@ -17,19 +17,19 @@ export default class Home extends Component {
             
             .name_logo{
               display: flex;
-              justify-content: space-around;
-              align-content: center;
+              justify-content: center;
+              flex-direction: column;
+              align-items: center;
               margin-bottom: 50px;
               color: var(--p);
             }
             .name{
+              text-align: center;
               font-size: 125px;
               font-weight: 900;
-              font-style: italic;
-              color: rgb(199, 0, 0);
-              text-shadow: 5px 5px 0px rgb(247, 161, 2);
-              text-decoration: underline;
-              padding-bottom: 50px;
+            }
+            .comp{
+              margin: 20px 0px 20px 20px;
             }
             .Wiaq{
               font-size: 25px; 
@@ -110,19 +110,13 @@ export default class Home extends Component {
 
         <Container className='main'>
           <div className='name_logo'>
-            <div>
-              <h1 className="name" >Almaty Quests</h1>
+                <img
+                  src={Logo}
+                  alt="Logo"
+                  className='comp'
+                />
               <p className='Wiaq'> Quests in Almaty are a great opportunity to relax with family and friends. It's time to get out of the room! Reality quests are one of the most popular entertainments in Almaty. Here you will find information about the best quest rooms from different companies!. </p>
-              <p>jkdshfkjhjk</p>
-            </div>
-            <div>
-              <img
-                src={Logo}
-                height="370px"
-                width="370px"
-                alt="Logo"
-              />
-            </div>
+
           </div>
           <div className="future_games">
             <div className="f_games">GAMES:</div>
