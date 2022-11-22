@@ -174,9 +174,7 @@ export default class Header extends Component {
                                         <Nav className='menu'>
                                             <Nav.Link as={Link} to="/" > HOME </Nav.Link>
                                             <Nav.Link as={Link} to="/rules"> RULES </Nav.Link>
-                                            <Nav.Link as={Link} to="/photos"> PHOTOS </Nav.Link>
                                             <Nav.Link as={Link} to="/about"> ABOUT US </Nav.Link>
-                                            <Nav.Link as={Link} to="/login"> LOGIN </Nav.Link>
                                         </Nav>
                                     </Navbar.Collapse>
                                 </div>
@@ -188,9 +186,7 @@ export default class Header extends Component {
                     <Routes>
                         <Route exact path='/' element={<Home />} />
                         <Route exact path='/rules' element={<Rules />} />
-                        <Route exact path='/photos' element={<Photos />} />
                         <Route exact path='/about' element={<About />} />
-                        <Route exact path='/login' element={<Login />} />
                     </Routes>
 
                     <footer>
@@ -202,7 +198,6 @@ export default class Header extends Component {
                                     <Navbar>
                                         <Nav.Link as={Link} to="/"> Main </Nav.Link>|
                                         <Nav.Link as={Link} to="/rules"> Rules </Nav.Link>|
-                                        <Nav.Link as={Link} to="/photos"> Photos </Nav.Link>|
                                         <Nav.Link as={Link} to="/about"> About Us </Nav.Link>
                                     </Navbar>
                                 </div>
