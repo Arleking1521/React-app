@@ -13,8 +13,6 @@ import Logo from '../images/logo.png'
 import Home from '../Pages/Home';
 import Rules from '../Pages/Rules';
 import About from '../Pages/About';
-import Photos from '../Pages/Photos';
-import Login from '../Pages/Login';
 
 export default class Header extends Component {
     render() {
