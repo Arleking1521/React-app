@@ -55,8 +55,8 @@ export default class Home extends Component {
               text-align: center;
               font-size: 50px;
               font-weight: 700;
-              color: rgb(199, 0, 0);
-              text-shadow: 3px 3px 0px rgb(247, 161, 2);
+              color: #02014e;
+              text-shadow: 2px 2px 0px #fefc16;
               margin-bottom: 50px;
             }
             .games_all{
@@ -68,9 +68,8 @@ export default class Home extends Component {
               height: 300px;
               width: 200px;
               transition: 1s;
-              box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
               z-index:9;
-              box-shadow: 10px 10px 0px rgb(247, 161, 2), -10px -10px 0px rgb(199, 0, 0);
+              border: 10px ridge #000;
             }
             .games:active{
               transform: scale(2.0);
