@@ -24,7 +24,7 @@ export default class Header extends Component {
                         font-family: 'Macondo', serif;
                       }
                         .header{
-                            background: linear-gradient(to top left,  #000088, #00001e);
+                            background: linear-gradient(to top left,  #0191ca, #000295);
                             box-shadow: 0px 3px 20px rgba(0, 0, 0, 0.377);
                         }
                         .menu{
@@ -126,9 +126,7 @@ export default class Header extends Component {
                             <div className='main_m'>
                                 <div>
                                     <Navbar.Brand href="/" >
-                                        <div>
-                                            <img src={Logo}></img>
-                                        </div>
+                                        <img src={Logo}></img>
                                     </Navbar.Brand>
                                 </div>
                                 <div>

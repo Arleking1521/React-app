@@ -30,7 +30,7 @@ export default class Home extends Component {
               font-weight: 900;
             }
             .comp{
-              margin: 20px 0px 20px 20px;
+              margin: 100px 0px 100px 0px;
             }
             .Wiaq{
               font-size: 25px; 
