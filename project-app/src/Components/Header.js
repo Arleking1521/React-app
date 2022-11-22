@@ -21,7 +21,7 @@ export default class Header extends Component {
                 <style type='text/css'>
                     {`
                     *{
-                        font-family: 'Nerko One', serif;
+                        font-family: 'Macondo', serif;
                       }
                         .header{
                             background: linear-gradient(to top left, rgb(247, 161, 2), rgb(199, 0, 0));
