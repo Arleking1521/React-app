@@ -1,8 +1,8 @@
 import React, { Component } from 'react'
-import heart from '../images/heart-outline.svg'
-import chat from '../images/chatbubbles-outline.svg'
-import phone from '../images/phone-portrait-outline.svg'
-import doc from '../images/document-outline.svg'
+import touch from '../images/Touch.png'
+import brain from '../images/brain.png'
+import skull from '../images/skull.png'
+import scared from '../images/scared.png'
 import Logo from '../images/logo.png'
 
 export default class Games extends Component {
@@ -67,16 +67,16 @@ export default class Games extends Component {
         <main>
           <div className="top_rul">
             <div className="left_rul">
-              <h3 className="itl shadow1">RULES ON THE QUIZ</h3>
+              <h3 className="itl shadow1">RULES ON THE QUESTS</h3>
               <h1 className="itl shadow1">IN FACT, EVERYTHING IS VERY</h1>
               <h1 className="itl shadow1">SIMPLE</h1>
               <p className="itl">The most important thing for us is that you have a good time</p>
               <p className="itl">In addition, do not forget</p>
               <div className="rules">
-                <div className="rul"><img src={heart} alt="" width="40px" className='aimge' /> DO NOT INTERFERE WITH OTHERS</div>
-                <div className="rul"><img src={chat} alt="" width="40px" className='aimge' /> DON'T SHOUT OUT ANSWERS</div>
-                <div className="rul"><img src={phone} alt="" width="40px" className='aimge' /> DO NOT USE CALCULATORS AND OTHER GADGETS</div>
-                <div className="rul"><img src={doc} alt="" width="40px" className='aimge' /> DO NOT WRITE OFF</div>
+                <div className="rul"><img src={touch} alt="" width="40px" className='aimge' /> DO NOT TOUCH THE ACTORS</div>
+                <div className="rul"><img src={brain} alt="" width="40px" className='aimge' /> THINK WITH YOUR BRAINS</div>
+                <div className="rul"><img src={skull} alt="" width="40px" className='aimge' /> DO NOT LOSE CONSCIOUSNESS</div>
+                <div className="rul"><img src={scared} alt="" width="40px" className='aimge' /> DO NOT BE SCARED</div>
               </div>
             </div>
             <div>
