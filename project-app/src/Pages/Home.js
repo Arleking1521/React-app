@@ -56,7 +56,7 @@ export default class Home extends Component {
               font-size: 50px;
               font-weight: 700;
               color: #02014e;
-              text-shadow: 2px 2px 0px #fefc16;
+              text-shadow: 0px 0px 5px #000;
               margin-bottom: 50px;
             }
             .games_all{
@@ -69,7 +69,8 @@ export default class Home extends Component {
               width: 200px;
               transition: 1s;
               z-index:9;
-              border: 10px ridge #000;
+              box-shadow: 0px 0px 20px #000;
+              border-radius: 10px;
             }
             .games:active{
               transform: scale(2.0);
@@ -79,6 +80,7 @@ export default class Home extends Component {
             .game{
               width: 100%;
               height:100%;
+              border-radius: 10px;
             }
             .buttons{
               display: flex;
