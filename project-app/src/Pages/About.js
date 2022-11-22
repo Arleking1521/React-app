@@ -92,7 +92,7 @@ export default class Contacts extends Component {
                             <p>Almaty, 34A Manas str.</p>
                     </div>
                     <h1 className="name ash fs">CONTACT US:</h1>
-                    <p className='logop'>E-mail: AlmatyQuest@quest.com</p>
+                    <p className='logop'>E-mail: AlmatyQuests@quest.com</p>
                     <p className='logop'>Phone Number: +7 (727) 320-00-00</p>
                 </main>
             </>
