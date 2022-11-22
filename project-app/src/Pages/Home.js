@@ -111,11 +111,8 @@ export default class Home extends Component {
         <Container className='main'>
           <div className='name_logo'>
             <div>
-              <h1 className="name" >EAZY QUIZY</h1>
-              <p className='Wiaq'>What is a quiz?
-                In a nutshell, this is an intellectual and entertaining competition.
-                Thematic, classical, musical, movie or sports quiz.
-                You are asked questions and you answer them, the more correct answers, the more chances to win.</p>
+              <h1 className="name" >Almaty Quests</h1>
+              <p className='Wiaq'> Quests in Almaty are a great opportunity to relax with family and friends. It's time to get out of the room! Reality quests are one of the most popular entertainments in Almaty. Here you will find information about the best quest rooms from different companies!. </p>
             </div>
             <div>
               <img
