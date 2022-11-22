@@ -113,6 +113,7 @@ export default class Home extends Component {
             <div>
               <h1 className="name" >Almaty Quests</h1>
               <p className='Wiaq'> Quests in Almaty are a great opportunity to relax with family and friends. It's time to get out of the room! Reality quests are one of the most popular entertainments in Almaty. Here you will find information about the best quest rooms from different companies!. </p>
+              <p>jkdshfkjhjk</p>
             </div>
             <div>
               <img
