@@ -7,6 +7,7 @@ import HP from '../images/Harry.jpg';
 import Scrubs from '../images/scrubs.jpg';
 import Helloween from '../images/Helloween.png';
 import ff from '../images/ff.jpg';
+import back from '../images/back.png'
 
 export default class Home extends Component {
   render() {
@@ -34,6 +35,7 @@ export default class Home extends Component {
             .Wiaq{
               font-size: 25px; 
               padding-left: 30px;
+              text-align: center;
             }
             main{
               padding-right: 20%;
@@ -63,6 +65,10 @@ export default class Home extends Component {
               display: flex;
               justify-content: space-around;
               align-items: center;
+              padding: 50px 0px 50px 0px;
+              background-size: 100%;
+              border-radius: 40px;
+              box-shadow: 0px 0px 20px #000;
             }
             .games{
               height: 300px;
@@ -85,7 +91,8 @@ export default class Home extends Component {
             .buttons{
               display: flex;
               justify-content: space-around;
-              margin-top: 60px;
+              margin-top: 20px;
+              margin-bottom: 20px;
               z-index: -99999999;
             }
             .log_in{
@@ -116,12 +123,12 @@ export default class Home extends Component {
                   alt="Logo"
                   className='comp'
                 />
-              <p className='Wiaq'> Quests in Almaty are a great opportunity to relax with family and friends. It's time to get out of the room! Reality quests are one of the most popular entertainments in Almaty. Here you will find information about the best quest rooms from different companies!. </p>
+              <p className='Wiaq'> Quests in Almaty are a great opportunity to relax with family and friends. It's time to get out of the room! Reality quests are one of the most popular entertainments in Almaty. Here you will find information about the best quest rooms from different companies! </p>
 
           </div>
           <div className="future_games">
-            <div className="f_games">GAMES:</div>
-            <div className="games_all">
+            <div className="f_games">UPCOMING EVENTS:</div>
+            <div className="games_all" style={{backgroundImage: `url(${back})`}}>
               <div className="games"><img src={Scrubs} className="game" /></div>
               <div className="games"><img src={Helloween} className="game" /></div>
               <div className="games"><img src={HP} className="game" /></div>
